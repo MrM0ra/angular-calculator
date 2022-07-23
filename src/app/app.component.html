@@ -1,1 +1,11 @@
-<app-calculator></app-calculator>
+<div class="container">
+    <div class="row">
+        <h1>{{title}}</h1>
+        <div [class]='visibleParent'>
+            El operando 2 no puede ser 0 en las divisiones!
+        </div>
+    </div>
+</div>
+<app-form (result)="setResult($event)" (visibleChild)="setVisible($event)"></app-form>
+
+<app-show-result [childResult]="parentResult"></app-show-result>

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="field margin-top-1">
+                <label>Operando 1</label>
+                <input [(ngModel)]="op1" class="form-control" type="number">
+            </div>
+            <div class="field margin-top-1">
+                <label>Operando 2</label>
+                <input [(ngModel)]="op2" class="form-control" type="number">
+            </div>
+            <div class="options margin-top-1">
+                <button (click)="sumar()" class="btn btn-primary">Sumar!</button>
+                <button (click)="multiplicar()" class="btn btn-primary">Multiplicar!</button>
+                <button (click)="restar()" class="btn btn-primary">Restar!</button>
+                <button (click)="dividir()" class="btn btn-primary">Dividir!</button>
+            </div>
+        </div>
+    </div>
+</div>

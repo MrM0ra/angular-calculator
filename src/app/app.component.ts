@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-calculator';
+
+    title = 'Calculator App'
+    parentResult: number
+    visibleParent: string="display-none"
+    
+    setResult(result:number){
+        this.parentResult=result
+        console.log(this.parentResult)
+    }
+
+    setVisible(visible:string){
+        this.visibleParent=visible
+    }
 }
